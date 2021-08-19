@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Alata', sans-serif;
+    overflow-x: hidden;
+    max-width: 100%;
+}
+*::selection{
+    background-color: #444444;
+}
+.navbar{
+    background-color: #040E27 !important;
+    color: white !important;
+    padding: 5vh 0;
+    max-width: 100%;
+}
+.navbar>a:first-of-type{
+    color: white;
+    font-size: 3vh;
+    transition: 1s;
+    text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+    margin-left: 5%;
+    transition: text-decoration-color 300ms;
+}
+.navbar>a:first-of-type:hover{
+    text-decoration-color: rgb(248, 248, 248);
+}
+.nav-link{
+    font-size: 2vh;
+}
+.navbar-nav > li{
+    padding-left:30px;
+    padding-right:30px;
+}
+header{
+    background-color: #040E27;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header h1{
+    color: white;
+    font-size: 10vh;
+}
+main{
+    padding: 10% 10% 0 10%;
+}
+.info{
+    display: inline;
+    margin-right: 5%;
+}
+.fa-twitter{
+    color: #1A91DA;
+}
+.fa-linkedin{
+    color: #0A66C2;
+
+}
+@media screen and (max-width:600px) {
+    header h1{
+        font-size: 9vh;    }
+        .info{
+            display: block;
+        }
+        main{
+                padding: 10% 15% 0 15%;
+        }
+}
