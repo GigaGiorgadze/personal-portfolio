@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Alata', sans-serif;
+}
+*::selection{
+    background-color: #444444;
+}
+.navbar{
+    background-color: #040E27 !important;
+    color: white !important;
+    padding: 5vh 0;
+    max-width: 100%;
+}
+.navbar>a:first-of-type{
+    color: white;
+    font-size: 3vh;
+    transition: 1s;
+    text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+    margin-left: 5%;
+    transition: text-decoration-color 300ms;
+}
+.navbar>a:first-of-type:hover{
+    text-decoration-color: rgb(248, 248, 248);
+}
+.nav-link{
+    font-size: 2vh;
+}
+.navbar-nav > li{
+    padding-left:30px;
+    padding-right:30px;
+}
+header{
+    background-color: #040E27;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header h1{
+    color: white;
+    font-size: 10vh;
+}
+.text span{
+    color: slategrey;
+}
+.text{
+    padding: 15% 20% 0 20%;
+    text-align: center;
+    height: auto;
+}
+.languages{
+    display: flex;
+    height: 6vh;
+    width: 20%;
+    margin: auto;
+    justify-content: space-between;
+    font-size: 5vh;
+    align-items: center;
+}
+.languages img{
+    height: 90%;
+}
+.fa-js{
+    color: #EAD41C;
+}
+.fa-css3-alt{
+    color: #264DE4;
+}
+.fa-html5{
+    color: #E54C21;
+}
+.languages>*:hover{
+    cursor: pointer;
+}
+footer{
+    background-color: #0181F5;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+footer>h1{
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(173, 170, 170, 0.9);
+    font-size: 20vh;
+}
+.footerCover{
+    position: absolute;
+}
+.footerCover>h1{
+    color: white;
+    font-size: 10vh;
+}
+.footerCover>a>button{
+    background-color: transparent;
+    color: white;
+    padding: 2% 10%;
+    border: 1px solid white;
+    transition: .4s linear;
+    outline: none;
+}
+.footerCover>a>button:hover{
+    background-color: white;
+    color: #0181F5;
+}
+@media screen and (max-width:700px) {
+    header h1{
+        color: white;
+        font-size: 9vh;
+    }
+    .text{
+        padding: 20% 0 0 0;
+    }
+    .languages{
+        width: 50%;
+    }
+}
