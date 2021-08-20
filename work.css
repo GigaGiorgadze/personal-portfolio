@@ -6,11 +6,9 @@ body{
     overflow-x: hidden;
     max-width: 100%;
 }
-*::selection{
-    background-color: #444444;
-}
 .navbar{
-    background-color: #040E27 !important;
+   background-color: #000000;
+    background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
     color: white !important;
     padding: 5vh 0;
     max-width: 100%;
@@ -34,12 +32,54 @@ body{
     padding-left:30px;
     padding-right:30px;
 }
+.custom-shape-divider-bottom-1629434694 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1629434694 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 183px;
+}
+
+.custom-shape-divider-bottom-1629434694 .shape-fill {
+    fill: #FFFFFF;
+}
 header{
-    background-color: #040E27;
+    background-color: #000000;
+    background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
     height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+.custom-shape-divider-bottom-1629437003 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1629437003 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 132px;
+}
+
+.custom-shape-divider-bottom-1629437003 .shape-fill {
+    fill: #81F503;
 }
 header h1{
     color: white;
@@ -182,6 +222,7 @@ footer>h1{
 }
 .footerCover>a>button:hover{
     background-color: white;
+    cursor: pointer;
     color: #0181F5;
 }
 @media screen and (max-width:800px) {
