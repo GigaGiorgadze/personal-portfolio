@@ -61,11 +61,8 @@ header>h1{
 }
 .headerCover h1{
     font-size: 50px;
-    background-color: #0cbaba;
-    background-image: linear-gradient(315deg, #0cbaba 0%, #1384b8 74%);
-    
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+color: #0cbaba;
+
 }
 .headerCover>p{
     margin-top: 9%;
@@ -74,9 +71,7 @@ header>h1{
     opacity: 100;
     transform: translateX(0);
 }
-.headerCover span{
-    color: slategrey;
-}
+
 .headerCover span::selection, .headerCover p::selection .headerCover h1::selection{
     color: white;
 }
