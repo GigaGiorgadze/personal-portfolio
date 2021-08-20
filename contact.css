@@ -6,7 +6,10 @@ body{
     overflow-x: hidden;
     max-width: 100%;
 }
-
+.fa-language{
+    color: white;
+    font-size: 4vh;
+}
 .navbar{
     background-color: #000000;
     background-image: linear-gradient(147deg, #000000 0%, #434343 74%);

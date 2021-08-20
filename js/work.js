@@ -1,0 +1,84 @@
+let lang = getCookie("username");
+const logo = document.querySelector('#logo')
+const home = document.querySelector('#home')
+const work = document.querySelector('#work')
+const about = document.querySelector('#about')
+const contact = document.querySelector('#contact')
+const myWork = document.querySelector('#myWork')
+const tip = document.querySelector('#tip')
+const see = document.querySelectorAll('#see')
+const rock = document.querySelector('#rock')
+const social = document.querySelector('#social')
+const sunny = document.querySelector('#sunnyside')
+const tic = document.querySelector('#tic')
+const weather = document.querySelector('#weather')
+const sketch = document.querySelector('#sketch')
+const more = document.querySelector('#more')
+const lets = document.querySelector('#lets')
+const talk = document.querySelector('#talk')
+const school = document.querySelector('#school')
+const jhin = document.querySelector('#jhin')
+const faq = document.querySelector('#faq')
+const blogr = document.querySelector('#blogr')
+const huddle = document.querySelector('#huddle')
+const book = document.querySelector('#book')
+const heat = document.querySelector('#heat')
+const gdp = document.querySelector('#gdp')
+const porfolio = document.querySelector('#porfolio')
+if(lang == 'ge'){
+    logo.innerText = 'გიგა გიორგაძე'
+    home.innerText = 'მთავარი'
+    work.innerText = 'პროექტები'
+    about.innerText = 'ჩემ შესახებ'
+    contact.innerText = 'დამიკავშირდით'
+    myWork.innerText = 'ვებ გვერდები'
+    tip.innerText ='ჩაის კალკულატორი'
+    see.forEach(se => se.innerText = "+ გადადით გვერდზე")
+    rock.innerText = 'ქვა ქაღალდი მაკრატელი'
+    social.innerText = 'მომხმარებლების შეფასება'
+    sunny.innerText = 'sunnySide'
+    tic.innerText = 'იქსი და ნული'
+    weather.innerText = 'ამინდის პროგნოზი' 
+    school.innerText = 'სასკოლო ნივთების ანიმაცია'
+    travelo.innerText = 'travelo'
+    jhin.innerText = 'ოთხი ბარათი'
+    faq.innerText = 'ხშირად დასმული შეკითხვები'
+    blogr.innerText = 'blogr'
+    huddle.innerText = 'huddle'
+    book.innerText = 'ბიბლიოთეკა'
+    sketch.innerText = 'დახატეთ ესკიზი'
+    heat.innerText = 'ტემპერატურის დიაგრამა'
+    gdp.innerText = 'ა.შ.შ-ს მ.შ.პ'
+    porfolio.innerText = 'პერსონალური პორტფოლიო'
+    lets.innerText = 'ერთად ვიმუშაოთ'
+    talk.innerText = 'დამიკავშირდით'
+}else if(lang == 'en'){
+    console.log('HELLLOOO MATE')
+}else{
+    logo.innerText = 'Гига Гиоргадзе'
+    home.innerText = 'главная'
+    work.innerText = 'проекты'
+    about.innerText = 'обо мне'
+    contact.innerText = 'контакты'
+    myWork.innerText = 'веб страницы'
+    tip.innerText ='калькулятор чаевых'
+    see.forEach(se => se.innerText = "+ посетить страницу")
+    rock.innerText = 'камень ножницы Бумага'
+    social.innerText = 'Отзывы Пользователей'
+    sunny.innerText = 'sunnySide'
+    tic.innerText = 'крестики-нолики'
+    weather.innerText = 'прогноз погоды'
+    travelo.innerText = 'travelo'
+    sketch.innerText = 'нарисовать эскиз'
+    lets.innerText = 'Давайте работать вместе'
+    talk.innerText = 'свяжитесь со мной'
+    blogr.innerText = 'blogr'
+    school.innerText = 'анимация школьных предметов'
+    jhin.innerText = 'Четыре карты'
+    faq.innerText = 'Вопросы-Ответы'
+    huddle.innerText = 'huddle'
+    book.innerText = 'библиотека'
+    heat.innerText = 'тепловая диаграмма'
+    gdp.innerText = 'ВВП США'
+    porfolio.innerText = 'личное портфолио'
+}

@@ -12,6 +12,9 @@ body{
     color: white !important;
     padding: 5vh 0;
     max-width: 100%;
+}.fa-language{
+    color: white;
+    font-size: 4vh;
 }
 .navbar>a:first-of-type{
     color: white;

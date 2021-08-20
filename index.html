@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>Giga Giorgadze</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="checkCookie()">
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-light">
-      <a href="./index.html">Giga Giorgadze</a>
+      <a id="logo" href="./index.html">Giga Giorgadze</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon text-white"></span>
         </button>
@@ -18,26 +19,36 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav  ml-auto">
             <li class="nav-item active">
-              <a class="nav-link text-white"  href="./index.html">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link text-white" id="home"  href="./index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="./about.html" >About</a>
+              <a class="nav-link text-white" id="about" href="./about.html" >About</a>
             </li>
             <li class="nav-item">
-                <a href="./work.html" class="nav-link text-white">Work</a>
+                <a href="./work.html" id="work" class="nav-link text-white">Work</a>
             </li>
-            <li class="nav-item"><a href="./contact.html" class="nav-link text-white">
+            <li class="nav-item"><a href="./contact.html" id="contact" class="nav-link text-white">
                 Contact
             </a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-language"></i>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item en" href="#"  lang="en">English</a>
+                <a class="dropdown-item ru" href="#" lang="ru">Русский</a>
+                <a class="dropdown-item ge" href="#" lang="ge">ქართული</a>
+              </div>
+            </li>
+      
           </ul>
-         
+          
         </div>
     </nav>
-    <div class="clear"></div>
     <header><h1>PORTFOLIO</h1>
     <div class="headerCover">
-      <p>Hello Everyone</p>
-      <h1>I'm Giga Giorgadze <span>junior web developer</span></h1>
+      <p id="hi">Hello Everyone</p>
+      <h1 id="name">I'm Giga Giorgadze junior web developer</h1>
     </div>
     <div class="custom-shape-divider-bottom-1629434694">
       <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -58,8 +69,8 @@
             <span class="css">CSS</span>
             </div>
             <div class="PageName">
-              <h1 class="pageTitle">Tip Calculator</h1>
-              <p>+ see page</p>
+              <h1 id="tip" class="pageTitle">Tip Calculator</h1>
+              <p id="see">+ see page</p>
             </div>
         </div>
       </a>       
@@ -74,7 +85,7 @@
               </div>
               <div class="PageName">
                 <h1 class="pageTitle">clipboard</h1>
-                <p>+ see page</p>    
+                <p id="see">+ see page</p>    
               </div>
           </div>
           <img src="./images/clipboard.png" alt="">
@@ -89,8 +100,8 @@
           <span class="css">CSS</span>
           </div>
           <div class="PageName">
-            <h1 class="pageTitle">rock paper scissors</h1>
-            <p>+ see page</p>   
+            <h1 id="rock" class="pageTitle">rock paper scissors</h1>
+            <p id="see">+ see page</p>   
           </div>
 
        </div>
@@ -106,8 +117,8 @@
               <span class="css">CSS</span>
               </div>
               <div class="PageName">
-                <h1 class="pageTitle">social proof page</h1>
-                <p>+ see page</p>    
+                <h1 id="social" class="pageTitle">social proof page</h1>
+                <p id="see">+ see page</p>    
               </div>
           </div>
           <img src="./images/social-proof.png" alt="">
@@ -122,8 +133,8 @@
               <span class="css">CSS</span>
               </div>
               <div class="PageName">
-                <h1 class="pageTitle">sunny side landing page</h1>
-                <p>+ see page</p>    
+                <h1 id="sunnyside" class="pageTitle">sunny side landing page</h1>
+                <p id="see">+ see page</p>    
               </div>
           </div>
           <img src="./images/sunny.png" alt="">
@@ -137,8 +148,8 @@
               <span class="css">CSS</span>
               </div>
               <div class="PageName">
-                <h1 class="pageTitle">tic tac toe</h1>
-                <p>+ see page</p>    
+                <h1 id="tic" class="pageTitle">tic tac toe</h1>
+                <p id="see">+ see page</p>    
               </div>
           </div>
           <img src="./images/tic-tac-toe.png" alt="">
@@ -152,7 +163,7 @@
                 </div>
           <div class="PageName">
             <h1 class="pageTitle">Fylo</h1>
-            <p>+ see page</p>
+            <p id="see">+ see page</p>
           </div>
             </div>
             <img src="./images/Fylo.jpeg" alt="">
@@ -169,8 +180,8 @@
             <span class="API">API</span>
             </div>
             <div class="PageName">
-              <h1 class="pageTitle">Wearth app</h1>
-              <p>+ see page</p>
+              <h1 id="weather" class="pageTitle">Wearth app</h1>
+              <p id="see">+ see page</p>
             </div>
         </div>
      
@@ -186,8 +197,8 @@
                     <span class="css">CSS</span>
                 </div>
                 <div class="PageName">
-                    <h1 class="pageTitle">Travelo Landing page</h1>
-                    <p>+ see page</p>
+                    <h1 id="travelo" class="pageTitle">Travelo Landing page</h1>
+                    <p id="see">+ see page</p>
                 </div>
             </div>
             <img src="./images/Travelo.png" alt="travelo image copy">
@@ -202,8 +213,8 @@
                   <span class="css">CSS</span>
               </div>
               <div class="PageName">
-                  <h1 class="pageTitle">Etch-a-sketch</h1>
-                  <p>+ see page</p>
+                  <h1 id="sketch" class="pageTitle">Etch-a-sketch</h1>
+                  <p id="see">+ see page</p>
               </div>
           </div>
           <img src="./images/Etch-a-sketch.jpeg" alt="Etch-a-sketch image">
@@ -212,7 +223,7 @@
     </div>
     
     <div class="more">
-      <a href="./work.html">
+      <a id="more" href="./work.html">
       More work
       </a>
     </div>
@@ -220,8 +231,8 @@
 <footer>
   <h1>LET'S TALK</h1>
   <div class="footerCover">
-    <h1>Let’s work together</h1>
-    <a href="./contact.html"><button>Start talking</button></a>
+    <h1 id="lets">Let’s work together</h1>
+    <a href="./contact.html"><button id="talk">Start talking</button></a>
   </div>
   <div class="custom-shape-divider-bottom-1629434694">
     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -231,8 +242,11 @@
     </svg>
 </div>
 </footer>
+
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="./js/langauges.js"></script>
+<script src="./js/index.js"></script>
 </body>
 </html>
