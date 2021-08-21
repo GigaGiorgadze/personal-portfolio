@@ -25,6 +25,7 @@ const book = document.querySelector('#book')
 const heat = document.querySelector('#heat')
 const gdp = document.querySelector('#gdp')
 const porfolio = document.querySelector('#porfolio')
+const pricingToggle = document.querySelector('#pricingToggle')
 if(lang == 'ge'){
     logo.innerText = 'გიგა გიორგაძე'
     home.innerText = 'მთავარი'
@@ -52,6 +53,7 @@ if(lang == 'ge'){
     porfolio.innerText = 'პერსონალური პორტფოლიო'
     lets.innerText = 'ერთად ვიმუშაოთ'
     talk.innerText = 'დამიკავშირდით'
+    pricingToggle.innerText = 'ფასის გადამრთველი'
 }else if(lang == 'en'){
     console.log('HELLLOOO MATE')
 }else{
@@ -81,4 +83,5 @@ if(lang == 'ge'){
     heat.innerText = 'тепловая диаграмма'
     gdp.innerText = 'ВВП США'
     porfolio.innerText = 'личное портфолио'
+    pricingToggle.innerText = 'переключатель цен'
 }
