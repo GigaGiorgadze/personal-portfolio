@@ -26,6 +26,7 @@ const heat = document.querySelector('#heat')
 const gdp = document.querySelector('#gdp')
 const porfolio = document.querySelector('#porfolio')
 const pricingToggle = document.querySelector('#pricingToggle')
+const redberry = document.querySelector('#redberry')
 if(lang == 'ge'){
     logo.innerText = 'გიგა გიორგაძე'
     home.innerText = 'მთავარი'
@@ -54,6 +55,7 @@ if(lang == 'ge'){
     lets.innerText = 'ერთად ვიმუშაოთ'
     talk.innerText = 'დამიკავშირდით'
     pricingToggle.innerText = 'ფასის გადამრთველი'
+    redberry.innerText = 'რედბერრის კითხვარი'
 }else if(lang == 'en'){
     console.log('HELLLOOO MATE')
 }else{
@@ -84,4 +86,5 @@ if(lang == 'ge'){
     gdp.innerText = 'ВВП США'
     porfolio.innerText = 'личное портфолио'
     pricingToggle.innerText = 'переключатель цен'
+    redberry.innerText = 'опрос редберры'
 }

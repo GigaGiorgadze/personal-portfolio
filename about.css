@@ -158,7 +158,8 @@ footer>h1{
 @media screen and (max-width:700px) {
     header h1{
         color: white;
-        font-size: 9vh;
+        font-size: 5vh;
+        text-align: center;
     }
     .text{
         padding: 20% 0 0 0;

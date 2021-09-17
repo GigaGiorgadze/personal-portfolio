@@ -232,6 +232,10 @@ footer>h1{
     .pageTitle{
         font-size: 20px;
     }
+    #myWork{
+        text-align: center;
+        font-size: 5vh;
+    }
     .work{
         width: 100%;
     }
