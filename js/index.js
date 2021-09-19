@@ -37,9 +37,7 @@ if(lang == 'ge'){
     more.innerText = 'მეტი პროქტები'
     lets.innerText = 'ერთად ვიმუშაოთ'
     talk.innerText = 'დამიკავშირდით'
-}else if(lang == 'en'){
-    console.log('HELLLOOO MATE')
-}else{
+}else if(lang == 'ru'){
     logo.innerText = 'Гига Гиоргадзе'
     home.innerText = 'главная'
     work.innerText = 'проекты'

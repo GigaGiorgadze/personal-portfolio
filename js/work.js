@@ -56,9 +56,7 @@ if(lang == 'ge'){
     talk.innerText = 'დამიკავშირდით'
     pricingToggle.innerText = 'ფასის გადამრთველი'
     redberry.innerText = 'რედბერრის კითხვარი'
-}else if(lang == 'en'){
-    console.log('HELLLOOO MATE')
-}else{
+}else if(lang == 'ru'){
     logo.innerText = 'Гига Гиоргадзе'
     home.innerText = 'главная'
     work.innerText = 'проекты'

@@ -21,9 +21,7 @@ if(lang == 'ge'){
     lets.innerText = 'ერთად ვიმუშაოთ'
     talk.innerText = 'დამიკავშირდით'
     
-}else if(lang == 'en'){
-    console.log("en")
-}else{
+}else if(lang == 'ru'){
     logo.innerText = 'Гига Гиоргадзе'
     home.innerText = 'главная'
     work.innerText = 'проекты'

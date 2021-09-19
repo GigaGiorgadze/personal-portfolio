@@ -12,9 +12,7 @@ if(lang == 'ge'){
     about.innerText = 'ჩემ შესახებ'
     contact.innerText = 'დამიკავშირდით'
     me.innerText = 'საკონტაქტო ინფორმაცია'
-}else if(lang == 'en'){
-    console.log('HELLLOOO MATE')
-}else{
+}else if(lang == 'ru'){
     logo.innerText = 'Гига Гиоргадзе'
     home.innerText = 'главная'
     work.innerText = 'проекты'
