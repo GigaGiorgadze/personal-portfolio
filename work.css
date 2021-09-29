@@ -200,7 +200,7 @@ p {
 }
 footer {
   background-color: #0181f5;
-  height: 60vh;
+  height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -242,5 +242,8 @@ footer > h1 {
   }
   .work {
     width: 100%;
+  }
+  footer{
+    height: 100vh;
   }
 }

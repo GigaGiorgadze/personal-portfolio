@@ -240,7 +240,7 @@ color: #0cbaba;
 }
 footer{
     background-color: #0181F5;
-    height: 60vh;
+    height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -332,4 +332,7 @@ footer>h1{
     .PageName p{
         font-size: 30px;
     }
+    footer{
+        height: 100vh;
+      }
 }
